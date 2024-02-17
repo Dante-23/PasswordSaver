@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, MainActivity2.class));
         });
         try {
-            mViewModel.getAllAccountDetails().observe(this, new Observer<List<AccountDetails>>() {
-                @Override
-                public void onChanged(List<AccountDetails> accountDetails) {
-                }
-            });
+//            mViewModel.getAllAccountDetails().observe(this, new Observer<List<AccountDetails>>() {
+//                @Override
+//                public void onChanged(List<AccountDetails> accountDetails) {
+//                }
+//            });
         } catch (ExecutionException e) {
         } catch (InterruptedException e) {
         }
